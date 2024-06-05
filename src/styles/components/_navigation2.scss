@@ -1,0 +1,72 @@
+.navigation2 {
+  .container-outer {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 3rem 0;
+    @extend %f-r-e-b;
+
+    .logo {
+      width: 5rem;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .nav-btn {
+      width: 3rem;
+      height: 1.5rem;
+      @extend %f-c-c-c;
+      justify-content: space-between;
+      gap: 0.45rem;
+      cursor: pointer;
+
+      .divider {
+        width: 100%;
+        height: 2px;
+        background: $black-color;
+        pointer-events: none;
+        transition: all 0.5s ease;
+      }
+
+      &.open {
+        .divider {
+          transform: rotate(45deg) translate(0.8rem, 0.25rem);
+          background-color: $red-color;
+        }
+
+        .divider:nth-child(2) {
+          transform: rotate(-45deg) translate(0.8rem, -0.25rem);
+        }
+      }
+    }
+
+    .nav-links {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      @extend %f-c-e-c;
+      gap: 1rem;
+      color: $black-color;
+      display: none;
+
+      .link {
+        color: $black-color;
+
+        &:hover {
+          color: $red-color;
+        }
+      }
+
+      &.open {
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+section {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: $white-color;
+}
+
+.container {
+  max-width: 85%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+
+  @include responsive(lg) {
+    max-width: 90%;
+  }
+}
+
+.container-outer {
+  max-width: 95%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+
+  @include responsive(lg) {
+    max-width: 90%;
+  }
+}
+
+// flexbox
+%f-r-c-b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%f-r-c-s {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+%f-r-c-c {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+%f-r-e-s {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+%f-r-s-c {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+%f-r-e-b {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+%f-r-s-s {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+%f-r-s-e {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+%f-r-c-e {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+%f-r-s-b {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+%f-c-s-s {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+%f-c-s-b {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+%f-c-c-s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+%f-c-c-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+%f-c-e-c {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}

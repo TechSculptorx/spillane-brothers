@@ -1,0 +1,68 @@
+.about-banner {
+  background-color: $white-color;
+  height: 100vh;
+}
+
+.core-values {
+  .container {
+    padding: 5rem 0;
+
+    .core-value-intro {
+      width: 45%;
+      @extend %f-c-s-s;
+      gap: 1rem;
+
+      h3 {
+        color: $red-color;
+      }
+
+      &.last {
+        width: 100%;
+        padding: 10rem 0;
+        border-bottom: 1px solid rgba($black-color, 0.3);
+
+        p,
+        h3 {
+          width: 45%;
+        }
+      }
+    }
+
+    .core-value-items {
+      padding-top: 5rem;
+      @extend %f-c-s-s;
+
+      .core-value-item {
+        @extend %f-r-s-b;
+        width: 100%;
+        padding: 5rem 0;
+        border-bottom: 1px solid rgba($black-color, 0.3);
+
+        figure {
+          flex: 0 0 3%;
+          max-width: 3%;
+          height: auto;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+
+        .content {
+          flex: 0 0 40%;
+          max-width: 40%;
+
+          h3 {
+            color: $red-color;
+          }
+        }
+
+        &:first-child {
+          border-top: 1px solid rgba($black-color, 0.3);
+        }
+      }
+    }
+  }
+}

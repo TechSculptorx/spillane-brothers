@@ -1,3 +1,23 @@
-*{
-    background: red;
-}
+// Typography
+@import "./base/typography";
+
+// utils
+@import "./utils/responsive";
+@import "./utils/variables";
+
+// Base
+@import "./base/base";
+@import "./base/global";
+
+// Shared
+@import "./shared/layout";
+@import "./shared/text";
+@import "./shared/links";
+
+// Pages
+@import "./pages/home";
+@import "./pages/about";
+
+// Components
+@import "./components/navigation";
+@import "./components/navigation2";

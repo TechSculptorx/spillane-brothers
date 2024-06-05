@@ -1,0 +1,17 @@
+// create mixin for responsive screen
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == xl {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media only screen and (max-width: 830px) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media only screen and (max-width: 568px) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.navigation {
+  .container-outer {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 3rem 0;
+    @extend %f-r-e-b;
+
+    .logo {
+      width: 5rem;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .nav-links {
+      @extend %f-r-s-s;
+      gap: 2rem;
+    }
+  }
+}

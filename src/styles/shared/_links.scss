@@ -1,0 +1,11 @@
+.link {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1.2;
+  transition: all $hover;
+  color: $white-color;
+
+  &:hover {
+    color: $red-color;
+  }
+}
