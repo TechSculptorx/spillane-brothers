@@ -1,0 +1,17 @@
+.back-to-top {
+  position: fixed;
+  bottom: 5rem;
+  left: 5rem;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+
+  img {
+    height: auto;
+    width: 3rem;
+  }
+
+  &.show {
+    display: block;
+  }
+}

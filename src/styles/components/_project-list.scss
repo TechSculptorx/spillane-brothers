@@ -1,0 +1,66 @@
+.project-list {
+  .container {
+    padding: 5rem 0;
+
+    .project-header {
+      padding-bottom: 5rem;
+
+      h2 {
+        color: $red-color;
+      }
+    }
+
+    .project-filter {
+      padding-bottom: 3rem;
+      .tabs-switch {
+        @extend %f-r-s-s;
+        gap: 2rem;
+
+        .link-fill {
+          &.active {
+            background-color: $red-color;
+            color: $white-color;
+          }
+        }
+      }
+    }
+
+    .project-wrapper {
+      .tabs-content {
+        .tabs-content-detail {
+          height: 100%;
+          width: 100%;
+          display: none;
+
+          .project-items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 2rem;
+            row-gap: 5rem;
+
+            .project-item {
+              @extend %f-c-s-s;
+              gap: 2rem;
+
+              figure {
+                height: 30rem;
+                width: 100%;
+                background: $black-color;
+
+                img {
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.detail {
+  &.project-detail {
+    .container {
+      .content {
+        gap: 6rem;
+
+        .intro {
+          h2 {
+            padding-bottom: 1rem;
+          }
+        }
+
+        .project-content {
+          @extend %f-c-s-s;
+          gap: 2rem;
+
+          .project-content-detail {
+            @extend %f-c-s-s;
+            gap: 4rem;
+          }
+        }
+      }
+
+      figure {
+        height: 50rem;
+      }
+    }
+  }
+}
+
+.core-values {
+  &.project-core-values {
+    .container {
+      .core-value-items {
+        padding-top: 0;
+
+        .core-value-item {
+          h1 {
+            font-size: 9.6rem;
+            color: $red-color;
+          }
+
+          .content {
+            .small-para {
+              color: $red-color;
+            }
+
+            .content-inner {
+              @extend %f-c-s-s;
+              gap: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  &.project-as {
+    .container {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+  }
+}

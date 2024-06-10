@@ -1,0 +1,48 @@
+.footer {
+  background: $black-color;
+  color: $white-color;
+
+  .container-outer {
+    @extend %f-c-s-s;
+
+    .footer-content {
+      max-width: 90%;
+      margin: 0 auto;
+      padding: 10rem 0.5rem;
+      @extend %f-r-s-s;
+      gap: 8rem;
+
+      h3 {
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
+
+      .f-item {
+        @extend %f-c-s-s;
+        gap: 2.5rem;
+
+        .content {
+          @extend %f-c-s-s;
+          gap: 0.5rem;
+        }
+
+        .social-icon {
+          @extend %f-r-s-s;
+          gap: 3rem;
+
+          img {
+            height: auto;
+            width: 4rem;
+          }
+        }
+      }
+    }
+
+    .copyright {
+      @extend %f-r-s-b;
+      width: 100%;
+      gap: 1rem;
+      padding: 2rem 0;
+    }
+  }
+}
