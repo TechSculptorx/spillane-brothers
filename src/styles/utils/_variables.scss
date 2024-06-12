@@ -7,3 +7,5 @@ $vh: calc(var(--vh, 1vh) * 100);
 $dvh: calc(var(--dvh, 1dvh) * 100);
 
 $hover: 0.4s cubic-bezier(0.85, 0, 0.15, 1);
+
+$gray-border: 1px solid rgba($black-color, 0.3);

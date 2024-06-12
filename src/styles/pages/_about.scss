@@ -8,7 +8,7 @@
     height: 80vh;
     padding: 5rem 0;
     margin: 5rem auto;
-    border-top: 1px solid rgba($black-color, 0.3);
-    border-bottom: 1px solid rgba($black-color, 0.3);
+    border-top: $gray-border;
+    border-bottom: $gray-border;
   }
 }
