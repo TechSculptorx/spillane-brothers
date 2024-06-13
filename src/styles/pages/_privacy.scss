@@ -1,0 +1,38 @@
+.privacy-banner {
+  .container {
+    padding-top: 12rem;
+    padding-bottom: 5rem;
+    border-bottom: $gray-border;
+
+    .small-para {
+      padding-bottom: 2rem;
+    }
+
+    h2 {
+      width: 40%;
+      color: $red-color;
+    }
+  }
+}
+
+.privacy-detail {
+  .container {
+    padding: 5rem 0;
+    @extend %f-r-s-e;
+
+    .content {
+      flex: 0 0 40%;
+      max-width: 40%;
+
+      .small-para {
+        padding-bottom: 2rem;
+        color: $red-color;
+      }
+
+      .inner-content {
+        @extend %f-c-s-s;
+        gap: 3rem;
+      }
+    }
+  }
+}

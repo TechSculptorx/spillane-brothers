@@ -1,0 +1,55 @@
+.detail {
+  &.service-detail {
+    .container {
+      padding-top: 12rem;
+
+      .intro {
+        h2 {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.core-values {
+  &.service-core-values {
+    .container {
+      padding-top: 0;
+
+      .core-value-items {
+        padding-top: 0;
+
+        .core-value-item {
+          border-top: $gray-border;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.service-number {
+  .container {
+    background-color: $red-color;
+    padding: 15rem 0;
+    margin: 5rem auto;
+    @extend %f-r-s-c;
+
+    .number-item {
+      padding: 0 15rem;
+      @extend %f-c-c-c;
+      color: $white-color;
+      gap: 2rem;
+
+      h1 {
+        font-size: 9.6rem;
+      }
+
+      &:nth-child(2) {
+        border-right: 1px solid rgba($white-color, 0.5);
+        border-left: 1px solid rgba($white-color, 0.5);
+      }
+    }
+  }
+}
