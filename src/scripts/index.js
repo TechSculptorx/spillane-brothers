@@ -61,4 +61,22 @@ if (tabs.length > 0) {
   });
 }
 
+// Pdf download section
+document.getElementById("download-btn").addEventListener("click", function () {
+  var dropdown = document.getElementById("pdf-dropdown");
+  var selectedOption = dropdown.options[dropdown.selectedIndex];
+  var pdfUrl = selectedOption.getAttribute("data-href");
+
+  if (pdfUrl) {
+    var link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } else {
+    alert("Please select a valid option.");
+  }
+});
+
 console.log("Hello, world!");
